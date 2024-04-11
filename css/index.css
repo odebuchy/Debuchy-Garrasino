@@ -29,6 +29,9 @@ a.avermas {
     
 body.bodyhome {
     background-image: url(..//img/background.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
 }
 h1 {
