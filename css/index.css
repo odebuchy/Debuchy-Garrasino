@@ -1,0 +1,103 @@
+.headerhome {
+    width: 100%;
+    height: 150px;
+    padding: 0%;
+    flex: auto;
+    text-align: center;
+    background-color: black;
+
+}
+
+.logo img {
+    height: 100px;
+    width: 200px;
+    align-self: center;
+}
+
+a {
+    color: white;
+    justify-content: space-between;
+}
+    
+body.bodyhome {
+    background-image: url(..//img/background.avif);
+
+}
+h1 {
+    font-size: 150%;
+    text-align: center;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 130%;
+    text-align: center;
+    font-weight: 300;
+}
+
+.contenedorflexhome {
+    align-items: center;
+    flex: auto;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+.ropamujerhome {
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+.ropamujerhome img {
+    height: 300px;
+    width: 250px;
+    align-self: center;
+
+}
+
+.ropahombrehome {
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+.ropahombrehome img {
+    height: 300px;
+    width: 250px;
+    align-self: center;
+
+}
+
+.accesorioshome {
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+.accesorioshome img {
+    height: 300px;
+    width: 250px;
+    align-self: center;
+
+}
+
+
+div.fhome {
+    font-size: 15px;
+    text-align: start;
+    align-self: flex-end;
+
+}
+
+.pfooter {
+    color: aliceblue;
+    align-items: flex-end;
+    align-self: flex-end;
+}
+
+.footerhome {
+    width: 100%;
+    height: 70px;
+    flex: auto;
+    text-align: left;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: black;
+}
