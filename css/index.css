@@ -54,8 +54,12 @@ h2 {
 }
 
 .ropamujerhome {
+    display: flex;
     flex-wrap: wrap;
     align-self: center;
+    flex-direction: row;
+    justify-content: space-around;
+
 }
 
 .ropamujerhome img {
@@ -75,6 +79,9 @@ h2 {
     width: 250px;
     align-self: center;
 
+}
+.tituloropamujer {
+    align-self: center;
 }
 
 .accesorioshome {
