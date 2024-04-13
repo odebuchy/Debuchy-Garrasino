@@ -19,13 +19,8 @@ a {
     justify-content: space-between;
 }
 
-a.avermas {
-    color: beige;
-    display: inline-block;
-    padding: 5px 5px;
-    margin: auto;
-    background-color: black;
-}
+
+
     
 body.bodyhome {
     background-image: url(..//img/background.avif);
@@ -101,6 +96,24 @@ h2 {
     width: 250px;
     align-self: center;
 
+}
+
+.avermas {
+    color: beige;
+    display: inline-block;
+    padding: 5px 5px;
+    margin: auto;
+    background-color: black;
+}
+   
+
+.aagregarcarrito {
+    color: beige;
+    display: inline-block;
+    padding: 5px 5px;
+    margin: auto;
+    background-color: black;
+    
 }
 
 
