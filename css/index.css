@@ -70,8 +70,12 @@ h2 {
 }
 
 .ropahombrehome {
+    display: flex;
     flex-wrap: wrap;
     align-self: center;
+    flex-direction: row;
+    justify-content: space-around;
+
 }
 
 .ropahombrehome img {
@@ -85,8 +89,12 @@ h2 {
 }
 
 .accesorioshome {
+    display: flex;
     flex-wrap: wrap;
     align-self: center;
+    flex-direction: row;
+    justify-content: space-around;
+
 }
 
 .accesorioshome img {
