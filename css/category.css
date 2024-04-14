@@ -25,3 +25,43 @@ a {
     background-size: cover;
 
 }
+
+h1 {
+    font-size: 150%;
+    text-align: center;
+    font-weight: 700;
+    color: black;
+}
+
+.categoriaseccionmujer {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.categoriaseccionmujer img {
+    height: 500px;
+    width: 500px;
+
+}
+
+.avermas {
+    color: beige;
+    display: inline-block;
+    padding: 5px 5px;
+    margin: auto;
+    background-color: black;
+}
+   
+
+.aagregarcarrito {
+    color: beige;
+    display: inline-block;
+    padding: 5px 5px;
+    margin: auto;
+    background-color: black;
+    
+}
+
