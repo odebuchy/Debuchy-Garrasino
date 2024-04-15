@@ -1,0 +1,13 @@
+.compras{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.compras img{
+    height: 300px;
+    width: 250px;
+    align-self: center;
+}
