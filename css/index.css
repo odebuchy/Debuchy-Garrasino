@@ -132,10 +132,33 @@ div.fhome {
 
 .footerhome {
     width: 100%;
-    height: 70px;
+    height: 50px;
     flex: auto;
     text-align: left;
     justify-content: flex-end;
     align-items: flex-end;
     background-color: black;
+}
+
+@media (width<=400px) {
+    h1, h2, h3 { text-align: center;}
+    .headeritem {
+        font-size: 13px;
+    }
+
+    h1 { font-size: 20px;}
+    h2 {font-size: 17px;}
+    h3 {font-size: 16px;}
+    p {font-size: 14px;}
+    
+
+    .ropamujerhome { justify-content: center;}
+
+    .ropahombrehome {justify-content: center;}
+
+    .accesorioshome {justify-content: center;}
+
+    .footerhome { height: 30px;}
+     
+
 }
