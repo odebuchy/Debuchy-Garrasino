@@ -28,7 +28,7 @@ a {
 .flechavolverahome {
     display: inline-block;
     padding: 5px 5px;
-    margin: auto;
+    margin-top: 8px;
     background-color: black;
     font-size: 15px;
     align-self: flex-start;
