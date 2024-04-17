@@ -18,11 +18,21 @@ a {
     color: rgb(106, 83, 6);
 }
 
+.formulariologin {
+    text-align: center;
+   
+}
+input {
+    width: auto;
+}
+
 .pfooter {
     color: rgba(101, 103, 105, 0.687);
     align-items: flex-end;
     align-self: flex-end;
 }
+
+
 
 .footerhome {
     width: 200%;
