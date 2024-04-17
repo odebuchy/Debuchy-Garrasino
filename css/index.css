@@ -159,6 +159,16 @@ div.fhome {
     .accesorioshome {justify-content: center;}
 
     .footerhome { height: 30px;}
+
+    .logo img { 
+        height: 80px;
+        width: 150px;
+        align-self: center;
+    }
+
+    .headerhome {
+        height: 120px;
+    }
      
 
 }
