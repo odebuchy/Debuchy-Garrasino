@@ -17,6 +17,12 @@
 a {
     color: white;
 }
+.bodycart{
+    background-image: url(../img/background.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .compras{
     display: flex;
     flex-wrap: wrap;
