@@ -65,3 +65,46 @@ h1 {
     
 }
 
+@media (width<=400px) {
+    h1, h2, h3 { text-align: center;}
+    .headeritem {
+        font-size: 13px;
+    }
+
+    .flechavolver {
+        font-size: 13px;
+    }
+
+    h1 { font-size: 20px;}
+    h2 {font-size: 17px;}
+    h3 {font-size: 16px;}
+    p {font-size: 12px;}
+    
+
+    .footerhome { height: 120px;}
+
+    .logo img { 
+        height: 80px;
+        width: 150px;
+        align-self: center;
+    }
+
+    .headercategory {
+        height: 120px;
+    }
+ 
+    .categoriaseccionmujer img {
+        height: 150px;
+        width: 150px;
+    
+    }
+
+    .avermas {
+        font-size: 12px;
+    }
+    .aagregarcarrito {
+        font-size: 12px;
+    }
+
+   
+}
