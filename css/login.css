@@ -17,3 +17,18 @@
 a {
     color: rgb(106, 83, 6);
 }
+.pfooter {
+    color: rgba(101, 103, 105, 0.687);
+    align-items: flex-end;
+    align-self: flex-end;
+}
+
+.footerhome {
+    width: 200%;
+    height: 200px;
+    flex: auto;
+    text-align: left;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: rgb(30, 30, 30);
+}
