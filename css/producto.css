@@ -96,7 +96,8 @@ h1 {
     p {font-size: 12px;}
     
 
-    .footerhome { height: 120px;}
+    .footerhome { height: 120px;
+    width: 100%;}
 
     .logo img { 
         height: 80px;
@@ -106,6 +107,7 @@ h1 {
 
     .headerproduct {
         height: 120px;
+        width: 100%;
     }
      
     .detalleproducto img {
