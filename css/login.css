@@ -17,7 +17,10 @@
 a {
     color: rgb(106, 83, 6);
 }
-
+.bodylogin {
+    height: 100%;
+    width: 100%;
+}
 .formulariologin {
     text-align: center;
     align-self: center;
