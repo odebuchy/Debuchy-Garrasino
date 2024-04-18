@@ -24,16 +24,38 @@ a {
 .formulariologin {
     text-align: center;
     align-self: center;
-   
+   width: 80px;
+   justify-content: center;
 }
-input {
-    width: auto;
+.olvidemicontra {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.notengocuenta {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .pfooter {
     color: rgba(101, 103, 105, 0.687);
     align-items: flex-end;
     align-self: flex-end;
+}
+button {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 
