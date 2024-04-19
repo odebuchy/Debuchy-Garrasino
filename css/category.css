@@ -134,15 +134,18 @@ h1 {
 
     .avermas {
         font-size: 12px;
+        margin-bottom: 7px;
     }
     .aagregarcarrito {
         font-size: 12px;
+        margin-bottom: 7px;
     }
     .sectionheader {
         display: flex;
         justify-content: space-evenly;
         font-size: 20px;
         flex-wrap: wrap;
+        margin-top: 10px;
     
     }
    
