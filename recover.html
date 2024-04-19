@@ -40,24 +40,22 @@
         </div>
         </div>
     </header>
-
-    <div class="flechavolverahome">
-        <a href="./index.html"> Volver </a>
-    </div>
-
-    <form  method="GET">
-        <div class="formVieja">
-            <label for="contraseñaVieja">Ingrese su contraseña anterior</label>
-            <input for="contraseñaVieja" type="password" name="pass" value="" placeholder="Contraseña Anterior">
+    <section class="formulariorecover">
+        <form action="">
+            <div>
+         <label for="mail"> Mail
+                <input type="email"  name= "mail"> 
+            </label>
         </div>
-    </form>
-    
-    <form action="login.html" method="GET">
-        <div class="formNueva">
-            <label for="contraseñaNueva">Ingrese una contraseña nueva</label>
-            <input for="contraseñaNueva" type="password" name="pass" value="" placeholder="Nueva Contraseña">
+  
+        <div>
+            <button type="submit"> Recuperar </button>
         </div>
-    
-    </form>
+        <div>
+            <input type="checkbox" name="recover" value="recover">
+            <label for="recover"> Quiero recuperar mi contraseña</label>
+        </div>
+        </form>
+</section>
 </body>
 </html>
