@@ -72,12 +72,17 @@ button {
     font-size: 15px;
 }
 
-.footerlogin {
+.footerhome {
     width: 100%;
-    height: 100px;
+    height: 200px;
     flex: auto;
     text-align: left;
     justify-content: flex-end;
     align-items: flex-end;
     background-color: rgb(30, 30, 30);
+}
+
+.social{
+    color: rgba(101, 103, 105, 0.687);
+    font-size: 40px;
 }
