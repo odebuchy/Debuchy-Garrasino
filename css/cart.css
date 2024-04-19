@@ -67,3 +67,48 @@ a {
     color: rgba(101, 103, 105, 0.687);
     font-size: 40px;
 }
+
+@media (width<=400px) {
+    h1, h2, h3 { text-align: center;}
+    .headeritem {
+        font-size: 13px;
+    }
+
+    h1 { font-size: 20px;}
+    h2 {font-size: 17px;}
+    h3 {font-size: 16px;}
+    p {font-size: 14px;}
+    
+
+
+
+    .footerhome { height: 120px;
+    width: 100%;}
+
+    .logo img { 
+        height: 80px;
+        width: 150px;
+        align-self: center;
+    }
+
+    .headerhome {
+        height: 140px;
+        width: 100%;
+    }
+    .sectionheader {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 20px;
+        flex-wrap: wrap;
+    
+    }
+
+    .compras img{
+        height: 200px;
+        width: 150px;
+        align-self: center;
+    }
+    
+     
+
+}
