@@ -82,8 +82,7 @@ button {
     background-color: rgb(30, 30, 30);
 }
 
-<<<<<<< HEAD
-@media (width<=400px) {
+@media (width <=400px) {
     h1, h2, h3 { text-align: center;}
     .headeritem {
         font-size: 13px;
@@ -146,12 +145,10 @@ button {
     .olvidemicontra{
         font-size: 13px;
     }
-    
+}
      
 
-=======
 .social{
     color: rgba(101, 103, 105, 0.687);
     font-size: 40px;
->>>>>>> fa58b327f7eeb217b7ba3d323589985e2fafce47
 }
