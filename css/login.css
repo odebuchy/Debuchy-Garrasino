@@ -44,20 +44,31 @@ a {
 
 
 .formulariologin {
+    font-size: 20px;
     text-align: center;
     width: 150px;
    justify-content: center;
    margin-left: 42%;
    margin-top: 7%;
-   margin-bottom: 7%;
+   margin-bottom: 10%;
    margin-right: 40%;
    padding-top: 30px;
    padding-bottom: 30px;
    color: black;
    
 }
-
-
+button {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.notengocuenta{
+    font-size: 15px;
+}
+.olvidemicontra{
+    font-size: 15px;
+}
 
 .footerlogin {
     width: 100%;
