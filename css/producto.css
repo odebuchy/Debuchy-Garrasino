@@ -36,13 +36,11 @@ a {
 
 }
 
-
 .flechavolveracategory {
     display: inline-block;
     padding: 5px 5px;
     margin-top: 8px;
-    background-color: black;
-    font-size: 15px;
+    font-size: 20px;
     align-self: flex-start;
     justify-content: space-around;
 

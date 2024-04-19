@@ -58,6 +58,16 @@ a{
     background-position: center;
     background-size: cover;
 }
+
+.flechavolveralogin{
+    display: inline-block;
+    padding: 5px 5px;
+    margin-top: 8px;
+    font-size: 20px;
+    align-self: flex-start;
+    justify-content: space-around;
+}
+
 .pfooter {
     color: rgba(101, 103, 105, 0.687);
     align-items: flex-end;
