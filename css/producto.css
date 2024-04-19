@@ -126,7 +126,7 @@ h1 {
     }
 
     .headerproduct {
-        height: 120px;
+        height: 140px;
         width: 100%;
     }
      
@@ -145,5 +145,12 @@ h1 {
         background-color: black;
         font-size: 20px;
         
+    }
+    .sectionheader {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 20px;
+        flex-wrap: wrap;
+    
     }
 }
