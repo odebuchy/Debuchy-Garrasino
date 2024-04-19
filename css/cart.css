@@ -82,7 +82,7 @@ a {
 
 
 
-    .footerhome { height: 120px;
+    .footercart{ height: 120px;
     width: 100%;}
 
     .logo img { 
@@ -91,7 +91,7 @@ a {
         align-self: center;
     }
 
-    .headerhome {
+    .headercart {
         height: 140px;
         width: 100%;
     }
