@@ -10,6 +10,7 @@
     background-color: black;
 
 }
+
 .sectionheader {
     display: flex;
     justify-content: space-evenly;
@@ -27,13 +28,15 @@
 a {
     color: rgb(106, 83, 6);
 }
-.bodycart{
+
+.bodycart {
     background-image: url(../img/background.avif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.compras{
+
+.compras {
     display: flex;
     flex-wrap: wrap;
     align-self: center;
@@ -41,7 +44,7 @@ a {
     justify-content: space-around;
 }
 
-.compras img{
+.compras img {
     height: 300px;
     width: 250px;
     align-self: center;
@@ -63,29 +66,48 @@ a {
     background-color: rgb(30, 30, 30);
 }
 
-.social{
+.social {
     color: rgba(101, 103, 105, 0.687);
     font-size: 40px;
 }
 
 @media (width<=400px) {
-    h1, h2, h3 { text-align: center;}
+
+    h1,
+    h2,
+    h3 {
+        text-align: center;
+    }
+
     .headeritem {
         font-size: 13px;
     }
 
-    h1 { font-size: 20px;}
-    h2 {font-size: 17px;}
-    h3 {font-size: 16px;}
-    p {font-size: 14px;}
-    
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
 
 
 
-    .footercart{ height: 120px;
-    width: 100%;}
 
-    .logo img { 
+    .footercart {
+        height: 120px;
+        width: 100%;
+    }
+
+    .logo img {
         height: 80px;
         width: 150px;
         align-self: center;
@@ -95,20 +117,21 @@ a {
         height: 140px;
         width: 100%;
     }
+
     .sectionheader {
         display: flex;
         justify-content: space-evenly;
         font-size: 20px;
         flex-wrap: wrap;
-    
+
     }
 
-    .compras img{
+    .compras img {
         height: 200px;
         width: 150px;
         align-self: center;
     }
-    
-     
+
+
 
 }

@@ -98,6 +98,7 @@ h2 {
     align-self: center;
 
 }
+
 .tituloropamujer {
     align-self: center;
 }
@@ -117,7 +118,7 @@ h2 {
 
 }
 
-.avermas{
+.avermas {
     color: rgb(56, 41, 2);
     display: inline-block;
     padding: 5px 5px;
@@ -125,7 +126,7 @@ h2 {
     text-decoration: none;
 }
 
-.aagregarcarrito{
+.aagregarcarrito {
     color: rgb(56, 41, 2);
     display: inline-block;
     padding: 5px 5px;
@@ -133,16 +134,16 @@ h2 {
     text-decoration: none;
 }
 
-.avermas:hover{
+.avermas:hover {
     text-decoration: underline;
     font-weight: bold;
-    color:rgb(56, 41, 2);
+    color: rgb(56, 41, 2);
 }
 
-.aagregarcarrito:hover{
+.aagregarcarrito:hover {
     text-decoration: underline;
     font-weight: bold;
-    color:rgb(56, 41, 2);
+    color: rgb(56, 41, 2);
 }
 
 div.fhome {
@@ -168,33 +169,58 @@ div.fhome {
     background-color: rgb(30, 30, 30);
 }
 
-.social{
+.social {
     color: rgba(101, 103, 105, 0.687);
     font-size: 40px;
 }
 
 @media (width<=400px) {
-    h1, h2, h3 { text-align: center;}
+
+    h1,
+    h2,
+    h3 {
+        text-align: center;
+    }
+
     .headeritem {
         font-size: 13px;
     }
 
-    h1 { font-size: 20px;}
-    h2 {font-size: 17px;}
-    h3 {font-size: 16px;}
-    p {font-size: 14px;}
-    
+    h1 {
+        font-size: 20px;
+    }
 
-    .ropamujerhome { justify-content: center;}
+    h2 {
+        font-size: 17px;
+    }
 
-    .ropahombrehome {justify-content: center;}
+    h3 {
+        font-size: 16px;
+    }
 
-    .accesorioshome {justify-content: center;}
+    p {
+        font-size: 14px;
+    }
 
-    .footerhome { height: 120px;
-    width: 100%;}
 
-    .logo img { 
+    .ropamujerhome {
+        justify-content: center;
+    }
+
+    .ropahombrehome {
+        justify-content: center;
+    }
+
+    .accesorioshome {
+        justify-content: center;
+    }
+
+    .footerhome {
+        height: 120px;
+        width: 100%;
+    }
+
+    .logo img {
         height: 80px;
         width: 150px;
         align-self: center;
@@ -204,13 +230,14 @@ div.fhome {
         height: 140px;
         width: 100%;
     }
+
     .sectionheader {
         display: flex;
         justify-content: space-evenly;
         font-size: 20px;
         flex-wrap: wrap;
-    
+
     }
-     
+
 
 }
