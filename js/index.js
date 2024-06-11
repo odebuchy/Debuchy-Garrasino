@@ -58,7 +58,7 @@ fetch('https://fakestoreapi.com/products/category/jewelery')
   .then (function (data){
     console.log(data); 
     let arrayAccesorios = data;
-    let sectionAccesorios= document.querySelector(`.categoriaaccesorios`);
+    let sectionAccesorios= document.querySelector(`.accesorioshome`);
     let Accesorios = [];
     
     for (let i = 0; i <arrayAccesorios.length ; i++) {
@@ -72,5 +72,11 @@ fetch('https://fakestoreapi.com/products/category/jewelery')
       
     
     sectionAccesorios.innerHTML= Accesorios
+
+    sectionAccesorios.style.flexDirection = 'row'
+    sectionAccesorios.style.display = 'flex'
+    sectionAccesorios.style.flexWrap = 'wrap'
+    sectionAccesorios.style.alignSelf = 'center'
+
 }
 })
