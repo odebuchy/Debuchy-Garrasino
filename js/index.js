@@ -213,7 +213,7 @@ fetch('https://fakestoreapi.com/products/category/jewelery')
   .then (function (data){
     console.log(data); 
     let arrayAccesorios = data;
-    let sectionAccesorios= document.querySelector(`.accesorioshome`);
+    let sectionAccesorios= document.querySelector('.accesorioshome');
     let Accesorios = [];
     
     for (let i = 0; i <arrayAccesorios.length ; i++) {
@@ -234,7 +234,7 @@ fetch('https://fakestoreapi.com/products/category/jewelery')
     sectionAccesorios.style.alignSelf = 'center'
 
 }
-})
+
 
 divAccesorios = document.querySelectorAll('.accesorioshome div')
 for (let i = 0; i < divAccesorios.length; i++){
@@ -272,3 +272,7 @@ for (let index = 0; index < descriptionAccesorios.length; index++) {
   descriptionAccesorios[i].style.fontFamily = "Bebas Neue", 'sans-serif'
   
 }  
+})
+.catch(function(e){
+  console.log(e)
+})
