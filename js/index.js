@@ -44,7 +44,6 @@ fetch('https://fakestoreapi.com/products/category/men\'s clothing')
      <p>${arrayCategoriaHombre[i].price}</p>
      <a  href="./producto.html?id=${arrayCategoriaHombre[i].id}">VER MAS</a>
      </div>`
-      
     
     sectionRopaHombre.innerHTML= RopaHombre
 
@@ -80,3 +79,40 @@ fetch('https://fakestoreapi.com/products/category/jewelery')
 
 }
 })
+
+divAccesorios = document.querySelectorAll('.accesorioshome div')
+for (let i = 0; i < divMujer.length; i++){
+  divAccesorios[i].style.margin = '10px'
+  divAccesorios[i].style.paddingTop = '30px'
+  divAccesorios[i].style.paddingBottom = '10px'
+  divAccesorios[i].style.paddingLeft = '10px'
+  divAccesorios[i].style.paddingRight = '10px'
+  divAccesorios[i].style.width = '20%'
+  divAccesorios[i].style.border = '1px solid black'
+  divAccesorios[i].style.backgroundColor = 'none'
+  divAccesorios[i].style.borderRadius = '10px'
+  divAccesorios[i].style.textAlign = 'center'
+}
+
+let imagenAccesorios = document.querySelectorAll('.accesorioshome div img')
+for (let i = 0; i < imagenAccesorios.length; i++){
+  imagenAccesorios[i].style.width = '30%'
+  imagenAccesorios[i].style.height = '40%'
+  imagenAccesorios[i].style.textAlign = 'center'
+  imagenAccesorios[i].style.marginTop = '20px'
+  imagenAccesorios[i].style.alignSelf = 'center'
+}
+
+let tituloAccesorios =  document.querySelectorAll('.accesorioshome div h2')
+for (let i = 0; i < tituloAccesorios.length; i++){
+  tituloAccesorios[i].style.fontSize = "115%"
+  tituloAccesorios[i].style.fontWeight = "400"
+  tituloAccesorios[i].style.fontFamily = "Bebas Neue", "sans-sherif"
+}
+
+let descriptionAccesorios = document.querySelectorAll('.accesorios div p')
+for (let index = 0; index < descriptionAccesorios.length; index++) {
+  descriptionAccesorios[i].style.fontSize = '85%'
+  descriptionAccesorios[i].style.fontFamily = "Bebas Neue", 'sans-serif'
+  
+}
