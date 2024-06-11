@@ -50,3 +50,27 @@ fetch('https://fakestoreapi.com/products/category/men\'s clothing')
 
 }
 })
+
+fetch('https://fakestoreapi.com/products/category/jewelery')
+.then (function(response){
+    return response.json();
+  })
+  .then (function (data){
+    console.log(data); 
+    let arrayAccesorios = data;
+    let sectionAccesorios= document.querySelector(`.categoriaaccesorios`);
+    let Accesorios = [];
+    
+    for (let i = 0; i <arrayAccesorios.length ; i++) {
+    Accesorios+=` <div>
+    <h2>${arrayAccesorios[i].title}</h2>
+      <img src="${arrayAccesorios[i].image}" class="imagenesAccesorios">
+     <p>${arrayAccesorios[i].description}</p>
+     <p>${arrayAccesorios[i].price}</p>
+     <a  href="./producto.html?id=${arrayAccesorios[i].id}">VER MAS</a>
+     </div>`
+      
+    
+    sectionAccesorios.innerHTML= Accesorios
+}
+})
