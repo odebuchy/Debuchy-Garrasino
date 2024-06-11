@@ -271,7 +271,6 @@ for (let index = 0; index < descriptionAccesorios.length; index++) {
   descriptionAccesorios[i].style.fontSize = '85%'
   descriptionAccesorios[i].style.fontFamily = "Bebas Neue", 'sans-serif'
   
-<<<<<<< HEAD
 }
 })
 
@@ -279,10 +278,3 @@ for (let index = 0; index < descriptionAccesorios.length; index++) {
   console.log(e)
   
 })
-=======
-}  
-})
-.catch(function(e){
-  console.log(e)
-})
->>>>>>> 2a995d5525ad66388d2c7c948abad93bf1faf137
