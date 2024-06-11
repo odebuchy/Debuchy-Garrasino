@@ -78,7 +78,7 @@ fetch('https://fakestoreapi.com/products/category/jewelery')
     sectionAccesorios.style.alignSelf = 'center'
 
 }
-})
+
 
 divAccesorios = document.querySelectorAll('.accesorioshome div')
 for (let i = 0; i < divMujer.length; i++){
@@ -116,3 +116,9 @@ for (let index = 0; index < descriptionAccesorios.length; index++) {
   descriptionAccesorios[i].style.fontFamily = "Bebas Neue", 'sans-serif'
   
 }
+})
+
+.catch(function(e) {
+  console.log(e)
+  
+})
