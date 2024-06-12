@@ -142,17 +142,17 @@ fetch('https://fakestoreapi.com/products/category/jewelery')
   })
   .then (function (data){
     console.log(data); 
-    let arrayAccesorios = data;
-    let sectionAccesorios= document.querySelector('.accesorioshome');
+    let arrayCategoriaAccesorios = data;
+    let sectionAccesorios = document.querySelector('.accesorioshome');
     let Accesorios = [];
     
-    for (let i = 0; i <arrayAccesorios.length ; i++) {
+    for (let i = 0; i <arrayCategoriaAccesorios.length ; i++) {
     Accesorios+=` <div>
-    <h2>${arrayAccesorios[i].title}</h2>
-      <img src="${arrayAccesorios[i].image}" class="imagenesAccesorios">
-     <p>${arrayAccesorios[i].description}</p>
-     <p>${arrayAccesorios[i].price}</p>
-     <a  href="./producto.html?id=${arrayAccesorios[i].id}">VER MAS</a>
+    <h2>${arrayCategoriaAccesorios[i].title}</h2>
+      <img src="${arrayCategoriaAccesorios[i].image}">
+     <p>${arrayCategoriaAccesorios[i].description}</p>
+     <p>${arrayCategoriaAccesorios[i].price}</p>
+     <a  href="./producto.html?id=${arrayCategoriaAccesorios[i].id}">VER MAS</a>
      </div>`
       
     
@@ -162,48 +162,45 @@ fetch('https://fakestoreapi.com/products/category/jewelery')
     sectionAccesorios.style.display = 'flex'
     sectionAccesorios.style.flexWrap = 'wrap'
     sectionAccesorios.style.alignSelf = 'center'
+    sectionAccesorios.style.justifyContent = 'space-around'
+    
+    }
+    divAccesorios = document.querySelectorAll('.accesorioshome div')
+    for (let i = 0; i < divAccesorios.length; i++) {
+    divAccesorios[i].style.margin = '10px'
+    divAccesorios[i].style.paddingTop = '30px'
+    divAccesorios[i].style.paddingBottom = '10px'
+    divAccesorios[i].style.paddingLeft = '10px'
+    divAccesorios[i].style.paddingRight = '10px'
+    divAccesorios[i].style.width = '20%'
+    divAccesorios[i].style.border = '1PX solid black'
+    divAccesorios[i].style.backgroundColor = 'none'
+    divAccesorios[i].style.borderRadius = '10px'
+    divAccesorios[i].style.textAlign = "center"
+  }
+   let imagenAccesorios = document.querySelectorAll('.accesorioshome div img')
+    for (let i = 0; i < imagenAccesorios.length; i++) {
+      imagenAccesorios[i].style.width = '"28%'
+      imagenAccesorios[i].style.height = '40%'
+      imagenAccesorios[i].style.textAlign = 'center'
+      imagenAccesorios[i].style.marginTop = '20px'
+      imagenAccesorios[i].style.alignSelf = 'center'
+    }
 
-}
-
-
-divAccesorios = document.querySelectorAll('.accesorioshome div')
-for (let i = 0; i < divAccesorios.length; i++){
-  divAccesorios[i].style.margin = '10px'
-  divAccesorios[i].style.paddingTop = '30px'
-  divAccesorios[i].style.paddingBottom = '10px'
-  divAccesorios[i].style.paddingLeft = '10px'
-  divAccesorios[i].style.paddingRight = '10px'
-  divAccesorios[i].style.width = '20%'
-  divAccesorios[i].style.border = '1px solid black'
-  divAccesorios[i].style.backgroundColor = 'none'
-  divAccesorios[i].style.borderRadius = '10px'
-  divAccesorios[i].style.textAlign = 'center'
-}
-
-let imagenAccesorios = document.querySelectorAll('.accesorioshome div img')
-for (let i = 0; i < imagenAccesorios.length; i++){
-  imagenAccesorios[i].style.width = '30%'
-  imagenAccesorios[i].style.height = '40%'
-  imagenAccesorios[i].style.textAlign = 'center'
-  imagenAccesorios[i].style.marginTop = '20px'
-  imagenAccesorios[i].style.alignSelf = 'center'
-}
-
-let tituloAccesorios =  document.querySelectorAll('.accesorioshome div h2')
-for (let i = 0; i < tituloAccesorios.length; i++){
-  tituloAccesorios[i].style.fontSize = "115%"
-  tituloAccesorios[i].style.fontWeight = "400"
-  tituloAccesorios[i].style.fontFamily = "Bebas Neue", "sans-sherif"
-}
-
-let descriptionAccesorios = document.querySelectorAll('.accesorios div p')
-for (let index = 0; index < descriptionAccesorios.length; index++) {
-  descriptionAccesorios[i].style.fontSize = '85%'
-  descriptionAccesorios[i].style.fontFamily = "Bebas Neue", 'sans-serif'
-  
-}
+    let tituloAccesorios = document.querySelectorAll('.accesorioshome div h2')
+    for (let i = 0; i < tituloAccesorios.length; i++) {
+      tituloAccesorios[i].style.fontSize = "115%"
+      tituloAccesorios[i].style.fontWeight = "400"
+      tituloAccesorios[i].style.fontFamily ="Bebas Neue", "sans-serif"
+    }
+      let descripcionAccesorios = document.querySelectorAll('.accesorioshome div p')
+    for (let i = 0; i < descripcionAccesorios.length; i++) {
+      descripcionAccesorios[i].style.fontSize = '85%'
+     descripcionAccesorios[i].style.fontFamily ="Bebas Neue", "sans-serif"
+   }
+    
 })
-
 .catch(function(e){
   console.log(e)
 })
+
