@@ -168,6 +168,7 @@ fetch('https://fakestoreapi.com/products/category/jewelery')
     divAccesorios = document.querySelectorAll('.accesorioshome div')
     for (let i = 0; i < divAccesorios.length; i++) {
     divAccesorios[i].style.margin = '10px'
+    divAccesorios[i].style.marginBottom = '40px'
     divAccesorios[i].style.paddingTop = '30px'
     divAccesorios[i].style.paddingBottom = '10px'
     divAccesorios[i].style.paddingLeft = '10px'
