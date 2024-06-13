@@ -11,7 +11,7 @@ form.addEventListener('submit', function(e){
        errorMail.innerText ='completar este campo'
    }
    else if(pass.value == '' || pass.length <3){
-       errorPass.innerText = 'completar este campo correct'
+       errorPass.innerText = 'Completar este campo correctamente'
    }
    else{
        user.email = email.value;
