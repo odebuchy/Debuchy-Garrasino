@@ -10,13 +10,16 @@ form.addEventListener('submit', function(e){
    if(email.value == ''){
        errorMail.innerText ='Por favor complete el campo email'
    }
-   else if(pass.value == '', pass.value.length < 6){
+   else if(pass.value == ''){
        errorPass.innerText = 'Por favor complete el campo contraseña'
-       errorPass.innerText = 'La contraseña debe tener al menos 6 caracteres'
+   }
+
+   else if(pass.value.length < 6){
+    errorPass.innerText = 'La contraseña debe tener al menos 6 caracteres'
    }
    else{
        user.email = email.value;
-       user.password = pass.value
+       user.password = pass.value;
    }
 
 
