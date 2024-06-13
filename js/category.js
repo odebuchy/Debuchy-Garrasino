@@ -23,3 +23,55 @@ fetch('https://fakestoreapi.com/products/categories')
     .catch(function (e) {
         console.log(e)
     })
+
+    let queryString = location.search;
+let categoryQueryString = new URLSearchParams(queryString)
+
+let categoria = categoryQueryString.get("categories")
+
+
+console.log("categoria", categoria)
+
+let tituloSeccion = document.querySelector ("h1")
+
+if (categoria == "jewelery") {
+    url = 'https://fakestoreapi.com/products/category/jewelery'
+    tituloSeccion.innerText= "ACCESORIOS"
+
+} else if (categoria == "electronics") {
+    url = 'https://fakestoreapi.com/products/category/electronics'
+     tituloSeccion.innerText= "ELECTRONICA"
+} else if (categoria == "men's clothing") {
+    url = "https://fakestoreapi.com/products/category/men's%20clothing"
+     tituloSeccion.innerText= "ROPA DE HOMBRE"
+}
+else if (categoria == "women's clothing") {
+    url = "https://fakestoreapi.com/products/category/women's%20clothing"
+    tituloSeccion.innerText= "ROPA DE MUJER"
+}
+else url = "no funciona"
+
+console.log(url)
+
+
+fetch(`https://fakestoreapi.com/products/category/${categoria}`)
+.then(function(response){
+    return response .json();
+})
+.then(function(data){
+    console.log("Categoria", data);
+    
+    let arrayCategories = data;
+    let sectionCategories = document.querySelector(`section`);
+    let CategoriaIndicada= [];
+    
+    for (let i = 0; i <arrayCategories.length ; i++) {
+    CategoriaIndicada+=` <section>
+    <h2>${categoria}.title}</h2>
+      <img src="${categoria[i].image}">
+     <p>${categoria[i].description}</p>
+     <p>${categoria[i].price}</p>
+     <a  href="./producto.html?id=${categoria[i].id}">VER MAS</a>
+     </section>`
+    }
+})
