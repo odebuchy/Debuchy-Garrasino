@@ -22,7 +22,4 @@ form.addEventListener('submit', function(e){
        user.password = pass.value;
    }
 
-
-
-
 })
