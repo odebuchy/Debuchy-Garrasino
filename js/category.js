@@ -63,17 +63,20 @@ fetch(`https://fakestoreapi.com/products/category/${categoria}`)
     
     let arrayCategories = data;
     let sectionCategories = document.querySelector(`section`);
-    let CategoriaIndicada= [];
+    let categoriaIndicada= [];
     
     for (let i = 0; i <arrayCategories.length ; i++) {
-    CategoriaIndicada+=` <section>
-    <h2>${categoria}.title}</h2>
-      <img src="${categoria[i].image}">
-     <p>${categoria[i].description}</p>
-     <p>${categoria[i].price}</p>
+    categoriaIndicada+=` <section>
+    <h2>${arrayCategories[i].title}</h2>
+      <img src="${arrayCategories[i].image}">
+     <p>${arrayCategories[i].description}</p>
+     <p>${arrayCategories[i].price}</p>
      <a  href="./producto.html?id=${categoria[i].id}">VER MAS</a>
      </section>`
-
-     sectionCategories.innerHTML = CategoriaIndicada
     }
+
+    sectionCategories.innerHTML = categoriaIndicada
+})
+.catch( function(e){
+    console.log(e)
 })
