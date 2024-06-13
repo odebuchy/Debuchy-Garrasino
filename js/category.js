@@ -76,6 +76,7 @@ fetch(`https://fakestoreapi.com/products/category/${categoria}`)
     }
 
     sectionCategories.innerHTML = categoriaIndicada
+    
 })
 .catch( function(e){
     console.log(e)
