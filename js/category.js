@@ -73,5 +73,7 @@ fetch(`https://fakestoreapi.com/products/category/${categoria}`)
      <p>${categoria[i].price}</p>
      <a  href="./producto.html?id=${categoria[i].id}">VER MAS</a>
      </section>`
+
+     sectionCategories.innerHTML = CategoriaIndicada
     }
 })
