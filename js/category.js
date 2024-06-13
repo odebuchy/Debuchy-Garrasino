@@ -33,6 +33,11 @@ let categoria = categoryQueryString.get("categories")
 console.log("categoria", categoria)
 
 let tituloSeccion = document.querySelector ("h1")
+tituloSeccion.style.fontSize = "160%";
+tituloSeccion.style.textAlign = "center";
+tituloSeccion.style.fontWeight = "700";
+tituloSeccion.style.color = "black";
+tituloSeccion.style.padding = '30px'
 
 if (categoria == "jewelery") {
     url = 'https://fakestoreapi.com/products/category/jewelery'
@@ -66,16 +71,57 @@ fetch(`https://fakestoreapi.com/products/category/${categoria}`)
     let categoriaIndicada= [];
     
     for (let i = 0; i <arrayCategories.length ; i++) {
-    categoriaIndicada+=` <section>
+    categoriaIndicada+=` <div>
     <h2>${arrayCategories[i].title}</h2>
       <img src="${arrayCategories[i].image}">
      <p>${arrayCategories[i].description}</p>
      <p>${arrayCategories[i].price}</p>
      <a  href="./producto.html?id=${categoria[i].id}">VER MAS</a>
-     </section>`
+     </div>`
     }
 
     sectionCategories.innerHTML = categoriaIndicada
+
+    sectionCategories.style.flexDirection = 'row'
+    sectionCategories.style.display = 'flex'
+    sectionCategories.style.flexWrap = 'wrap'
+   sectionCategories.style.alignSelf = 'center'
+   sectionCategories.style.justifyContent = 'space-around'
+
+   divCat = document.querySelectorAll('.categoriaseccionmujer div')
+    for (let i = 0; i < divCat.length; i++) {
+        divCat[i].style.margin = '10px'
+        divCat[i].style.paddingTop = '30px'
+        divCat[i].style.paddingBottom = '10px'
+        divCat[i].style.paddingLeft = '10px'
+        divCat[i].style.paddingRight = '10px'
+        divCat[i].style.width = '40%'
+        divCat[i].style.height = 'fit-content'
+        divCat[i].style.border = 'none'
+        divCat[i].style.backgroundColor = 'none'
+        divCat[i].style.textAlign = "center"
+  }
+  let imagenCat = document.querySelectorAll('.categoriaseccionmujer div img')
+    for (let i = 0; i < imagenCat.length; i++) {
+        imagenCat[i].style.width = 'default'
+        imagenCat[i].style.height = 'default'
+        imagenCat[i].style.textAlign = 'center'
+        imagenCat[i].style.marginTop = '20px'
+        imagenCat[i].style.alignSelf = 'center'
+    }
+
+    let tituloCat = document.querySelectorAll('.categoriaseccionmujer div h2')
+    for (let i = 0; i < tituloCat.length; i++) {
+        tituloCat[i].style.fontSize = "130%"
+        tituloCat[i].style.fontWeight = "550"
+        tituloCat[i].style.fontFamily ="Bebas Neue", "sans-serif"
+    }
+      let descripcionCat = document.querySelectorAll('.categoriaseccionmujer div p')
+    for (let i = 0; i < descripcionCat.length; i++) {
+        descripcionCat[i].style.fontSize = '90%'
+        descripcionCat[i].style.fontFamily ="Bebas Neue", "sans-serif"
+   }
+
     
 })
 .catch( function(e){
