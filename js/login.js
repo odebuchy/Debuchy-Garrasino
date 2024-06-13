@@ -8,10 +8,10 @@ let errorPass = document.querySelector('.errorPass');
 form.addEventListener('submit', function(e){
    e.preventDefault();
    if(email.value == ''){
-       errorMail.innerText ='completar este campo'
+       errorMail.innerText ='Por favor complete el campo email'
    }
    else if(pass.value == '' || pass.length <3){
-       errorPass.innerText = 'Completar este campo correctamente'
+       errorPass.innerText = 'Por favor complete el campo contraseña'
    }
    else{
        user.email = email.value;
