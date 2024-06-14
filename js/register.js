@@ -11,21 +11,21 @@ localStorage.setItem("#email", email)
 form.addEventListener('submit', function(e){
    e.preventDefault();
    if(email.value == ''){
-    errorMail.innerText ='Por favor complete el campo';
+    errorMail.innerText ='Por favor complete el campo.';
    }
 
    else if(pass.value == ''){
-    errorPass.innerText = 'Por favor complete el campo contraseña';
+    errorPass.innerText = 'Por favor complete el campo contraseña.';
    }
 
    else if(pass.value.length < 6){
-    errorPass.innerText = 'Debe ingresar al menos 6 caracteres';
+    errorPass.innerText = 'Debe ingresar al menos 6 caracteres.';
    }
 
    if(repepass.value == ''){
-    errorRepepass.innerText = 'Por favor complete el campo'; 
+    errorRepepass.innerText = 'Por favor complete el campo.'; 
    } else if (repepass.value == repepass.value){
-    errorRepepass.innerText = 'Las contraseñas no coinciden';
+    errorRepepass.innerText = 'Las contraseñas no coinciden.';
    }
 
    else{

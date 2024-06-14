@@ -10,14 +10,14 @@ localStorage.setItem("#email", email)
 form.addEventListener('submit', function(e){
    e.preventDefault();
    if(email.value == ''){
-      alert (errorMail ='Por favor complete el campo email')
+      alert (errorMail ='Por favor complete el campo email.')
    }
    else if(pass.value == ''){
-       alert (errorPass = 'Por favor complete el campo contraseña')
+       alert (errorPass = 'Por favor complete el campo contraseña.')
    }
 
    else if(pass.value.length < 6){
-    alert (errorPass = 'La contraseña debe tener al menos 6 caracteres')
+    alert (errorPass = 'La contraseña debe tener al menos 6 caracteres.')
    }
    else{
        user.email = email.value;

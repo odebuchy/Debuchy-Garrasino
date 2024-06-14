@@ -54,19 +54,17 @@
     </div>
     <section class="formulariorecover">
         <form action="">
-            <div>
-                <label for="mail"> Mail
-                    <input type="email" name="mail">
-                </label>
-            </div>
 
-            <div>
+                <label for="mail"> Mail </label>
+                    <input type="email" name="mail" id="email" value=""> 
+                    <p class="errorMail"> </p>
+
                 <button type="submit"> Recuperar </button>
-            </div>
-            <div>
-                <input type="checkbox" name="recover" value="recover">
+            
+                <input type="checkbox" name="recover" value="recover" id="checkbox">
                 <label class="recover" for="recover"> Quiero recuperar mi contraseña </label>
-            </div>
+                <p class="errorCheckbox"> </p>
+
         </form>
     </section>
     <footer class="footerrecover">
@@ -82,6 +80,8 @@
         </div>
 
     </footer>
+
+    <script src="./js/recover.js"> </script>
 </body>
 
 </html>
