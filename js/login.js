@@ -21,6 +21,7 @@ form.addEventListener('submit', function(e){
    else{
        user.email = email.value;
        user.password = pass.value;
+       this.submit();
    }
    
 })
