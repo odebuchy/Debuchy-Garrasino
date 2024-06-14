@@ -76,7 +76,7 @@ fetch(`https://fakestoreapi.com/products/category/${categoria}`)
       <img src="${arrayCategories[i].image}">
      <p>${arrayCategories[i].description}</p>
      <p>${arrayCategories[i].price}</p>
-     <a  href="./producto.html?id=${categoria[i].id}">VER MAS</a>
+     <a  href="./producto.html?id=${arrayCategories[i].id}">VER MAS</a>
      </div>`
     }
 

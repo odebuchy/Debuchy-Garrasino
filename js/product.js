@@ -53,12 +53,12 @@ fetch('https://fakestoreapi.com/products/categories')
     
             
     
-            tituloProd.innerHTML = data.title
-            imagenProd.src = data.image
-            descripcionProd.innerHTML = data.description
-            precioProd.innerHTML = data.price
-            categoriaProd.innerHTML = data.category
-            categoriaProd.href = `./category.html?categories=${data.category}`
+            tituloProd.innerHTML = arrayProduct.title
+            imagenProd.src = arrayProduct.image
+             descripcionProd.innerHTML = arrayProduct.description
+            precioProd.innerHTML = arrayProduct.price
+            categoriaProd.innerHTML = arrayProduct.category
+            categoriaProd.href = `./category.html?categories=${arrayProduct.category}`
            
             let sectionDetalle = document.querySelector (".detalleproducto div")
         sectionDetalle.style.flexDirection = 'row'
