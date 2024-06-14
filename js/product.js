@@ -91,10 +91,10 @@ fetch('https://fakestoreapi.com/products/categories')
     
             // let sectionDetalle = document.querySelector (".detalleproducto img")
             // sectionDetalle.style.flexDirection = 'row'
-            // sectionDetalle.style.display = 'flex'
+            //  sectionDetalle.style.display = 'flex'
             // sectionDetalle.style.flexWrap = 'wrap'
-            // sectionDetalle.style.alignSelf = 'center'
-            // sectionDetalle.style.justifyContent = 'space-around'
+            //  sectionDetalle.style.alignSelf = 'center'
+            //  sectionDetalle.style.justifyContent = 'space-around'
     
           
             // imagenProd.style.width = 'default'
