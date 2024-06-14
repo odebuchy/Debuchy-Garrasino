@@ -19,7 +19,7 @@ form.addEventListener('submit', function(e){
    }
 
    else if(pass.value.length < 6){
-    errorPass.innerText = 'La contraseña debe tener al menos 6 caracteres';
+    errorPass.innerText = 'Debe ingresar al menos 6 caracteres';
    }
 
    if(repepass.value == ''){
