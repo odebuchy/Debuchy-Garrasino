@@ -80,13 +80,16 @@ fetch('https://fakestoreapi.com/products/categories')
 
          let imagenDetalle = document.querySelector (".detalleproducto div img")
          imagenDetalle.style.flexDirection = 'row'
-         imagenDetalle.sectionDetalle.style.display = 'flex'
          imagenDetalle.style.flexWrap = 'wrap'
          imagenDetalle.style.alignSelf = 'center'
          imagenDetalle.style.justifyContent = 'space-around' 
          imagenDetalle.style.paddingBottom = '50px'
          
-    
+    // let divCategoria = document.querySelector (".categoriaprod")
+    // divCategoria.style.marginTop = '30px'
+    // divCategoria.style.marginBottom = '30px'
+    //      divCategoria.style.marginLeft = '10px'
+    //      divCategoria.style.marginRight = '10px'
             
     
             // let sectionDetalle = document.querySelector (".detalleproducto img")
