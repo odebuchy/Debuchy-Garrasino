@@ -1,5 +1,6 @@
 let form = document.querySelector('form');
 let email = document.querySelector('#email');
+let user = document.querySelector('#email'); 
 let pass = document.querySelector('#pass');
 let errorMail = document.querySelector('.errorMail');
 let errorPass = document.querySelector('.errorPass');
