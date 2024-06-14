@@ -60,6 +60,32 @@ fetch('https://fakestoreapi.com/products/categories')
             categoriaProd.innerHTML = data.category
             categoriaProd.href = `./category.html?categories=${data.category}`
            
+            let sectionDetalle = document.querySelector (".detalleproducto div")
+        sectionDetalle.style.flexDirection = 'row'
+        sectionDetalle.style.display = 'flex'
+        sectionDetalle.style.flexWrap = 'wrap'
+         sectionDetalle.style.alignSelf = 'center'
+         sectionDetalle.style.justifyContent = 'space-around'
+         sectionDetalle.style.margin = '10px'
+         sectionDetalle.style.paddingTop = '30px'
+         sectionDetalle.style.paddingBottom = '30px'
+         sectionDetalle.style.paddingLeft = '10px'
+         sectionDetalle.style.paddingRight = '10px'
+         sectionDetalle.style.width = '70%'
+         sectionDetalle.style.backgroundColor = 'none'
+         sectionDetalle.style.borderRadius = '10px'
+         sectionDetalle.style.textAlign = "center"
+
+
+
+         let imagenDetalle = document.querySelector (".detalleproducto div img")
+         imagenDetalle.style.flexDirection = 'row'
+         imagenDetalle.sectionDetalle.style.display = 'flex'
+         imagenDetalle.style.flexWrap = 'wrap'
+         imagenDetalle.style.alignSelf = 'center'
+         imagenDetalle.style.justifyContent = 'space-around' 
+         imagenDetalle.style.paddingBottom = '50px'
+         
     
             
     
