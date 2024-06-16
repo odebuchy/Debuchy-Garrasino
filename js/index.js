@@ -46,7 +46,7 @@ fetch('https://fakestoreapi.com/products/category/women\'s clothing')
       <img src="${arrayCategoriaMujer[i].image}">
       </a>
      <p class="descripcionprod">${arrayCategoriaMujer[i].description}</p>
-     <p class="precioprod">${arrayCategoriaMujer[i].price}</p>
+     <p class="precioprod">$${arrayCategoriaMujer[i].price}</p>
      <a  href="./producto.html?id=${arrayCategoriaMujer[i].id}">VER MAS</a>
      </div>`
       
@@ -117,7 +117,7 @@ fetch('https://fakestoreapi.com/products/category/men\'s clothing')
       <img src="${arrayCategoriaHombre[i].image}">
       </a>
      <p class="descripcionprod">${arrayCategoriaHombre[i].description}</p>
-     <p class="precioprod">${arrayCategoriaHombre[i].price}</p>
+     <p class="precioprod">$${arrayCategoriaHombre[i].price}</p>
      <a  href="./producto.html?id=${arrayCategoriaHombre[i].id}">VER MAS</a>
      </div>`
     
