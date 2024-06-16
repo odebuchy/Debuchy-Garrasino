@@ -102,4 +102,7 @@ fetch('https://fakestoreapi.com/products/categories')
     
             
         })
-        
+        .catch(function(e){
+            console.log(e)
+           });
+           
