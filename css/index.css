@@ -82,6 +82,10 @@ h2 {
     align-self: center;
 
 }
+.ropamujerhome div {
+    width: 30%;
+    align-items: center;
+    }
 
 .ropahombrehome {
     display: flex;
@@ -98,6 +102,10 @@ h2 {
     align-self: center;
 
 }
+.ropahombrehome div {
+    width: 20%;
+    align-items: center;
+    }
 
 .tituloropamujer {
     align-self: center;
@@ -117,6 +125,10 @@ h2 {
     align-self: center;
 
 }
+.accesorioshome div {
+    width: 20%;
+    align-items: center;
+    }
 
 .avermas {
     color: rgb(56, 41, 2);
