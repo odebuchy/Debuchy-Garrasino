@@ -99,7 +99,18 @@ fetch('https://fakestoreapi.com/products/categories')
             // imagenProd.style.height = 'default'
             // imagenProd.style.marginTop = '20px'
             // imagenProd.style.alignSelf = 'center'
+
+        ///////////////////// intento de hacer el product de otra manera
     
+        //     sectionProducto.innerHTML += `
+        //     <div class="product">
+        //    <h1 class="tituloproductoelegido"> ${data.title}</h1>
+        //            <img src=${data.image} class="imagenprod">
+        //            <p class="descrpicionproducto"> ${data.description}</p>
+        //            <p class="precioproducto"> $${data.price} </p>
+        //            <a href="./category.html?categories=${data.category}"class="categoriaproducto">${data.category} </a>
+        //            <a href="cart.html" class="aagregarcarrito"> Agregar al carrito</a>
+        //        </div>
             
         })
         .catch(function(e){
