@@ -60,7 +60,7 @@ fetch('https://fakestoreapi.com/products/categories')
             categoriaProd.innerHTML = arrayProduct.category
             categoriaProd.href = `./category.html?categories=${arrayProduct.category}`
            
-            let sectionDetalle = document.querySelector (".detalleproducto div")
+            // let sectionDetalle = document.querySelector (".detalleproducto div")
         // sectionDetalle.style.flexDirection = 'row'
         // sectionDetalle.style.display = 'flex'
         // sectionDetalle.style.flexWrap = 'wrap'
