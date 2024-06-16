@@ -184,9 +184,7 @@ fetch('https://fakestoreapi.com/products/category/jewelery')
     for (let i = 0; i <arrayCategoriaAccesorios.length ; i++) {
     Accesorios+=` <div>
      <h3 class="tituloprod">${arrayCategoriaAccesorios[i].title}</h3>
-    <a href="producto.html">
       <img src="${arrayCategoriaAccesorios[i].image}">
-      </a>
      <p class="descripcionprod">${arrayCategoriaAccesorios[i].description}</p>
      <p class="precioprod">${arrayCategoriaAccesorios[i].price}</p>
      <a  href="./producto.html?id=${arrayCategoriaAccesorios[i].id}">VER MAS</a>

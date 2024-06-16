@@ -57,6 +57,18 @@ h1 {
     height: 500px;
     width: 500px;
 
+
+}
+
+.categoriaseccionmujer div {
+    width: 40%;
+    margin: 10px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
 }
 
 .avermas {
