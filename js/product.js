@@ -15,7 +15,7 @@ fetch('https://fakestoreapi.com/products/categories')
   <li><a href="./category.html?categories=${arrayCategorias.category = "men's clothing"}">Hombre</a></li>
   <li><a href="./category.html?categories=${arrayCategorias.category = "women's clothing"}">Mujer</a></li>
   <li><a href="./cart.html?">Carrito</a></li>
-  <li><a href="./login.html?">Carrito</a></li>
+  <li><a href="./login.html?">Login</a></li>
   <li><a href="./register.html?">Registro</a></li>`
 
 
