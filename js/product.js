@@ -46,9 +46,9 @@ fetch('https://fakestoreapi.com/products/categories')
             let producto = [];
             let tituloProd = document.querySelector(".tituloproductoelegido")
             let imagenProd = document.querySelector(".imagenprod")
-            let descripcionProd = document.querySelector(".descrpicionproducto")
-            let categoriaProd = document.querySelector(".categoriaproducto")
-            let precioProd = document.querySelector(".precioproducto")
+            let descripcionProd = document.querySelector(".descrpicionprod")
+            let categoriaProd = document.querySelector(".categoriaprod")
+            let precioProd = document.querySelector(".precioprod")
             let CarritoAgregar = document.querySelector(".aagregarcarrito")
     
             
@@ -61,35 +61,30 @@ fetch('https://fakestoreapi.com/products/categories')
             categoriaProd.href = `./category.html?categories=${arrayProduct.category}`
            
             let sectionDetalle = document.querySelector (".detalleproducto div")
-        sectionDetalle.style.flexDirection = 'row'
-        sectionDetalle.style.display = 'flex'
-        sectionDetalle.style.flexWrap = 'wrap'
-         sectionDetalle.style.alignSelf = 'center'
-         sectionDetalle.style.justifyContent = 'space-around'
-         sectionDetalle.style.margin = '10px'
-         sectionDetalle.style.paddingTop = '30px'
-         sectionDetalle.style.paddingBottom = '30px'
-         sectionDetalle.style.paddingLeft = '10px'
-         sectionDetalle.style.paddingRight = '10px'
-         sectionDetalle.style.width = '70%'
-         sectionDetalle.style.backgroundColor = 'none'
-         sectionDetalle.style.borderRadius = '10px'
-         sectionDetalle.style.textAlign = "center"
+        // sectionDetalle.style.flexDirection = 'row'
+        // sectionDetalle.style.display = 'flex'
+        // sectionDetalle.style.flexWrap = 'wrap'
+        //  sectionDetalle.style.alignSelf = 'center'
+        //  sectionDetalle.style.justifyContent = 'space-around'
+        //  sectionDetalle.style.margin = '10px'
+        //  sectionDetalle.style.paddingTop = '30px'
+        //  sectionDetalle.style.paddingBottom = '30px'
+        //  sectionDetalle.style.paddingLeft = '10px'
+        //  sectionDetalle.style.paddingRight = '10px'
+        //  sectionDetalle.style.width = '70%'
+        //  sectionDetalle.style.backgroundColor = 'none'
+        //  sectionDetalle.style.borderRadius = '10px'
+        //  sectionDetalle.style.textAlign = "center"
 
 
 
-         let imagenDetalle = document.querySelector (".detalleproducto div img")
-         imagenDetalle.style.flexDirection = 'row'
-         imagenDetalle.style.flexWrap = 'wrap'
-         imagenDetalle.style.alignSelf = 'center'
-         imagenDetalle.style.justifyContent = 'space-around' 
-         imagenDetalle.style.paddingBottom = '50px'
+        //  let imagenDetalle = document.querySelector (".detalleproducto div img")
+        //  imagenDetalle.style.flexDirection = 'row'
+        //  imagenDetalle.style.flexWrap = 'wrap'
+        //  imagenDetalle.style.alignSelf = 'center'
+        //  imagenDetalle.style.justifyContent = 'space-around' 
+        //  imagenDetalle.style.paddingBottom = '50px'
          
-    // let divCategoria = document.querySelector (".categoriaprod")
-    // divCategoria.style.marginTop = '30px'
-    // divCategoria.style.marginBottom = '30px'
-    //      divCategoria.style.marginLeft = '10px'
-    //      divCategoria.style.marginRight = '10px'
             
     
             // let sectionDetalle = document.querySelector (".detalleproducto img")
