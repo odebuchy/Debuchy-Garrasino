@@ -24,10 +24,14 @@ form.addEventListener('submit', function(e){
 
    if(repepass.value == ''){
     errorRepepass.innerText = 'Por favor complete el campo.'; 
-   } else if (repepass.value == repepass.value){
+    errorRepepass.style.display = 'block';
+    valid = false; 
+   } else if (pass.value !== repepass.value){
     errorRepepass.innerText = 'Las contraseñas no coinciden.';
+    errorRepepass.style.display = 'block';
+    valid = false; 
    }
-
+   
    else{
        user.email = email.value;
        user.password = pass.value;
