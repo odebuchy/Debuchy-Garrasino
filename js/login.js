@@ -18,11 +18,9 @@ form.addEventListener('submit', function(e){
 
    else if(pass.value.length < 6){
     alert (errorPass = 'La contraseña debe tener al menos 6 caracteres.')
+   } else{
+    this.submit
    }
-   else{
-       user.mail = mail.value;
-       user.password = pass.value;
-       this.submit();
-   }
+
    
 })
