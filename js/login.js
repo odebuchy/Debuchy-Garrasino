@@ -1,15 +1,15 @@
 let form = document.querySelector('form');
-let email = document.querySelector('#email');
+let mail = document.querySelector('#mail');
 let user = document.querySelector('#email'); 
 let pass = document.querySelector('#pass');
 let errorMail = document.querySelector('.errorMail');
 let errorPass = document.querySelector('.errorPass');
-localStorage.setItem("#email", email)
+localStorage.setItem("#email", mail)
 
 
 form.addEventListener('submit', function(e){
    e.preventDefault();
-   if(email.value == ''){
+   if(mail.value == ''){
       alert (errorMail ='Por favor complete el campo email.')
    }
    else if(pass.value == ''){
@@ -20,7 +20,7 @@ form.addEventListener('submit', function(e){
     alert (errorPass = 'La contraseña debe tener al menos 6 caracteres.')
    }
    else{
-       user.email = email.value;
+       user.mail = mail.value;
        user.password = pass.value;
        this.submit();
    }
