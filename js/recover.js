@@ -12,7 +12,8 @@ form.addEventListener('submit', function(e){
     else{
         user.email = email.value;
     }
-    /*if (recover.checked) {
-        errorCheckbox.innerText = 'Por favor acepte el campo Quiero recuperar mi contraseña.'
-    }*/ 
+   if (!recoverCheckbox.checked){
+    alert("Por favor acepte el campo Quiero recuperar mi contraseña");
+    valid = false; 
+   }
 })

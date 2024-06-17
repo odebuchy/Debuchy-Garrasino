@@ -11,15 +11,14 @@ form.addEventListener('submit', function(e){
    e.preventDefault();
    if(mail.value == ''){
       alert (errorMail ='Por favor complete el campo email.')
-   }
-   else if(pass.value == ''){
-       alert (errorPass = 'Por favor complete el campo contraseña.')
-   }
-
-   else if(pass.value.length < 6){
-    alert (errorPass = 'La contraseña debe tener al menos 6 caracteres.')
+   } else if(pass.value == ''){
+      alert (errorPass = 'Por favor complete el campo contraseña.')
+   } else if(pass.value.length < 6){
+      alert (errorPass = 'La contraseña debe tener al menos 6 caracteres.')
    } else{
-    this.submit
+      form.submit()
+      document.location.href = "index.html"
+      localStorage.setItem("userEmail", mail.value)
    }
 
    
