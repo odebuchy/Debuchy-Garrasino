@@ -12,14 +12,18 @@ form.addEventListener('submit', function(e){
    e.preventDefault();
    if(email.value == ''){
     errorMail.innerText ='Por favor complete el campo.';
+    errorMail.style.display = 'block';
+    valid = false; 
    }
 
-   else if(pass.value == ''){
+   if(pass.value == ''){
     errorPass.innerText = 'Por favor complete el campo contraseña.';
-   }
-
-   else if(pass.value.length < 6){
+    errorPasserrorMail.style.display = 'block';
+    valid = false; 
+   } else if(pass.value.length < 6){
     errorPass.innerText = 'Debe ingresar al menos 6 caracteres.';
+    errorPasserrorMail.style.display = 'block'
+    valid = false; 
    }
 
    if(repepass.value == ''){
@@ -30,12 +34,15 @@ form.addEventListener('submit', function(e){
     errorRepepass.innerText = 'Las contraseñas no coinciden.';
     errorRepepass.style.display = 'block';
     valid = false; 
-   }
+   } 
    
    else{
-       user.email = email.value;
-       user.password = pass.value;
-       user.repepass = repepass.value;
+    user.email = email.value;
+    user.password = pass.value;
+    user.repepass = repepass.value;
+}
+if (valid){
+    console.log('Formulario valido, redirigiendo al formulario de login.');
+    window.location.href = 'login.html'; 
    }
-   
 })
