@@ -49,7 +49,7 @@ fetch('https://fakestoreapi.com/products/categories')
             let descripcionProd = document.querySelector(".descrpicionprod")
             let categoriaProd = document.querySelector(".categoriaprod")
             let precioProd = document.querySelector(".precioprod")
-            let CarritoAgregar = document.querySelector(".aagregarcarrito")
+            let carritoAgregar = document.querySelector(".aagregarcarrito")
     
             
     
@@ -59,6 +59,16 @@ fetch('https://fakestoreapi.com/products/categories')
             precioProd.innerHTML = arrayProduct.price
             categoriaProd.innerHTML = arrayProduct.category
             categoriaProd.href = `./category.html?categories=${arrayProduct.category}`
+
+
+            carritoAgregar.addEventListener ("click", function(){
+                console.log ("id", idProducto)
+                let arrayCart = []
+                arrayCart.push (idProducto)
+                console.log ("arrayID", arrayCart)
+                 localStorage.setItem ("arrayCarrito", JSON.stringify(arrayCart))
+                console.log ("datos guardados")
+            })
            
             // let sectionDetalle = document.querySelector (".detalleproducto div")
         // sectionDetalle.style.flexDirection = 'row'
@@ -100,17 +110,7 @@ fetch('https://fakestoreapi.com/products/categories')
             // imagenProd.style.marginTop = '20px'
             // imagenProd.style.alignSelf = 'center'
 
-        ///////////////////// intento de hacer el product de otra manera
-    
-        //     sectionProducto.innerHTML += `
-        //     <div class="product">
-        //    <h1 class="tituloproductoelegido"> ${data.title}</h1>
-        //            <img src=${data.image} class="imagenprod">
-        //            <p class="descrpicionproducto"> ${data.description}</p>
-        //            <p class="precioproducto"> $${data.price} </p>
-        //            <a href="./category.html?categories=${data.category}"class="categoriaproducto">${data.category} </a>
-        //            <a href="cart.html" class="aagregarcarrito"> Agregar al carrito</a>
-        //        </div>
+        
             
         })
         .catch(function(e){
