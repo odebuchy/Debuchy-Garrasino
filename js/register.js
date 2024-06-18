@@ -34,15 +34,8 @@ form.addEventListener('submit', function(e){
     errorRepepass.innerText = 'Las contraseñas no coinciden.';
     errorRepepass.style.display = 'block';
     valid = false; 
-   } 
-   
-   else{
-    user.email = email.value;
-    user.password = pass.value;
-    user.repepass = repepass.value;
-}
-if (valid){
-    console.log('Formulario valido, redirigiendo al formulario de login.');
-    window.location.href = 'login.html'; 
-   }
+   } else{
+        this.submit(); 
+        document.location.href = 'login.html'
+    }
 })
