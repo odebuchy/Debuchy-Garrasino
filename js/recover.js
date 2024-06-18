@@ -11,6 +11,12 @@ form.addEventListener('submit', function(e){
      errorMail.innerText ='Por favor escriba su email.';
     } else if(!checkbox.checked){
         errorCheckbox.innerText = 'Por favor acepte el campo "Quiero recuperar mi contraseña."'
+    }else{
+        user.email = email.value;
+        localStorage.setItem('user', JSON.stringify(user))
+        this.submit(); 
+        document.location.href = 'login.html'
     }
+
     
 })
