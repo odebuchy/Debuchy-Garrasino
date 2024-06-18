@@ -18,7 +18,7 @@ form.addEventListener('submit', function(e){
    } else{
       form.submit()
       document.location.href = "index.html"
-      localStorage.setItem("userEmail", mail.value)
+      localStorage.setItem('userEmail', JSON.stringify(userEmail))
    }
 
    
