@@ -26,12 +26,6 @@ fetch('https://fakestoreapi.com/products/categories')
 })
 
 
-
-
-console.log("categoria", categoria)
-
-    
-    
     
     
     
