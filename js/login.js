@@ -1,11 +1,9 @@
 let form = document.querySelector('form');
 let mail = document.querySelector('#mail');
-let user = document.querySelector('#email'); 
 let pass = document.querySelector('#pass');
 let errorMail = document.querySelector('.errorMail');
 let errorPass = document.querySelector('.errorPass');
-localStorage.setItem("#mail", mail)
-
+let user = {}
 
 form.addEventListener('submit', function(e){
    e.preventDefault();
@@ -18,7 +16,7 @@ form.addEventListener('submit', function(e){
    } else{
       form.submit()
       document.location.href = "index.html"
-      localStorage.setItem('mail', JSON.stringify(mail))
+      localStorage.setItem('user', JSON.stringify(user))
    }
 
    
