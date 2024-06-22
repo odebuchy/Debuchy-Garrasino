@@ -1,0 +1,694 @@
+.header {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    width: 100%;
+    height: 150px;
+    padding: 0%;
+    flex: auto;
+    text-align: center;
+    background-color: black;
+}
+
+.sectionheader {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    font-size: 20px;
+
+}
+
+.logo img {
+    height: 100px;
+    width: 200px;
+    align-self: center;
+}
+
+a {
+    color: rgb(106, 83, 6);
+    justify-content: space-around;
+}
+
+
+.bodyhome {
+    background-image: url(..//img/background.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 300%;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 40px;
+    border-top: 8px solid rgb(56, 41, 2);
+}
+
+h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    text-align: center;
+    padding-bottom: 40px;
+    font-weight: 300;
+    border-bottom: 8px solid rgb(56, 41, 2);
+}
+
+.contenedorflexhome {
+    align-items: center;
+    flex: auto;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+.ropamujerhome {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.ropamujerhome img {
+    height: 300px;
+    width: 250px;
+    align-self: center;
+
+}
+.ropamujerhome article {
+    width: 30%;
+    align-items: center;
+    }
+
+.ropahombrehome {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.ropahombrehome img {
+    height: 300px;
+    width: 250px;
+    align-self: center;
+
+}
+.ropahombrehome article {
+    width: 20%;
+    align-items: center;
+    }
+
+.tituloropamujer {
+    align-self: center;
+}
+
+.accesorioshome {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.accesorioshome img {
+    height: 300px;
+    width: 250px;
+    align-self: center;
+
+}
+.accesorioshome article {
+    width: 20%;
+    align-items: center;
+    }
+
+.avermas {
+    color: rgb(56, 41, 2);
+    display: inline-block;
+    padding: 5px 5px;
+    margin: auto;
+    text-decoration: none;
+}
+
+.aagregarcarrito {
+    color: rgb(56, 41, 2);
+    display: inline-block;
+    padding: 5px 5px;
+    margin: auto;
+    text-decoration: none;
+}
+
+.avermas:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgb(56, 41, 2);
+}
+
+.aagregarcarrito:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgb(56, 41, 2);
+}
+
+div.fhome {
+    font-size: 15px;
+    text-align: start;
+    align-self: flex-end;
+
+}
+
+.pfooter {
+    color: rgba(101, 103, 105, 0.687);
+    align-items: flex-end;
+    align-self: flex-end;
+}
+
+.footer {
+    width: 100%;
+    height: 200px;
+    flex: auto;
+    text-align: left;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: rgb(30, 30, 30);
+}
+
+.social {
+    color: rgba(101, 103, 105, 0.687);
+    font-size: 40px;
+}
+
+
+.bodycart {
+    background-image: url(../img/background.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cart-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cart-container img {
+    height: 300px;
+    width: 250px;
+    align-self: center;
+}
+
+.cart-container h2 {
+    font-size: 140%;
+}
+
+
+.bodycategory {
+    background-image: url(..//img/background.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.bodycategory h1 {
+    font-size: 150%;
+    text-align: center;
+    font-weight: 700;
+    color: black;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.categoriaseccionmujer {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.categoriaseccionmujer img {
+    height: 500px;
+    width: 500px;
+
+
+}
+
+.categoriaseccionmujer div {
+    width: 40%;
+    margin: 10px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+.avermas {
+    color: beige;
+    display: inline-block;
+    padding: 5px 5px;
+    margin: auto;
+    background-color: black;
+}
+
+
+.aagregarcarrito {
+    color: beige;
+    display: inline-block;
+    padding: 5px 5px;
+    margin: auto;
+    background-color: black;
+
+}
+
+
+
+.bodylogin {
+    background-image: url(../img/background.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.formulariologin {
+    font-size: 20px;
+    text-align: center;
+    width: 170px;
+    justify-content: center;
+    margin-left: 42%;
+    margin-top: 7%;
+    margin-bottom: 10%;
+    margin-right: 40%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: black;
+    text-align: center;
+
+
+}
+
+button {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.notengocuenta {
+    font-size: 15px;
+}
+
+.olvidemicontra {
+    font-size: 15px;
+}
+
+li {
+    list-style: none;
+}
+
+
+.bodyproduct {
+    background-image: url(..//img/background.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+
+.detalleproducto {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.detalleproducto img {
+    width: 40%;
+    height: 40%;
+
+}
+.detalleproducto div {
+    width: auto;
+     text-align: center;
+    margin: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: space-around;  
+}
+
+
+
+
+.productopag h1 {
+    font-size: 130%;
+    text-align: center;
+    font-weight: 700;
+}
+
+.aagregarcarrito {
+    color: beige;
+    display: inline-block;
+    padding: 5px 230px;
+    margin: auto;
+    background-color: black;
+    font-size: 20px;
+    margin-bottom: 40px;
+
+}
+
+
+
+.formulariorecover {
+    font-size: 20px;
+    text-align: center;
+    width: 150px;
+    justify-content: center;
+    margin-left: 42%;
+    margin-top: 7%;
+    margin-bottom: 10%;
+    margin-right: 40%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: black;
+}
+
+button {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.recover {
+    font-size: 16px;
+}
+
+
+.bodyrecover {
+    background-image: url(../img/background.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.flechavolveralogin {
+    display: inline-block;
+    padding: 5px 5px;
+    margin-top: 8px;
+    font-size: 20px;
+    align-self: flex-start;
+    justify-content: space-around;
+}
+
+
+.bodyregister {
+    background-image: url(../img/background.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.formularioregistro {
+    font-size: 20px;
+    text-align: center;
+    width: 180px;
+    justify-content: center;
+    margin-left: 42%;
+    margin-top: 7%;
+    margin-bottom: 10%;
+    margin-right: 40%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: black;
+}
+
+button {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.condiciones {
+    font-size: 16px;
+}
+
+.yatengocuenta {
+    font-size: 16px;
+}
+
+@media (width<=400px) {
+
+    .header {
+        height: 140px;
+        width: 100%;
+    }
+
+    .sectionheader {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 20px;
+        flex-wrap: wrap;
+    }
+
+    h1,
+    h2,
+    h3 {
+        text-align: center;
+    }
+
+    .headeritem {
+        font-size: 13px;
+    }
+
+    .contenedorflexhome h1 {
+        font-size: 20px;
+    }
+
+    .contenedorflexhome h2 {
+        font-size: 17px;
+    }
+
+    .contenedorflexhome h3 {
+        font-size: 16px;
+    }
+
+    .contenedorflexhome p {
+        font-size: 14px;
+    }
+
+
+    .ropamujerhome {
+        justify-content: center;
+    }
+
+    .ropahombrehome {
+        justify-content: center;
+    }
+
+    .accesorioshome {
+        justify-content: center;
+    }
+
+    .footerhome {
+        height: 120px;
+        width: 100%;
+    }
+
+    .logo img {
+        height: 80px;
+        width: 150px;
+        align-self: center;
+    }
+
+
+
+    .cart-container h2 {
+        font-size: 15px;
+    }
+    .cart-container p {
+        font-size: 13px;
+    }
+
+    .cart-container img {
+        height: 200px;
+        width: 150px;
+        align-self: center;
+    }
+
+    .flechavolver {
+        font-size: 13px;
+    }
+
+    .bodycategory h1 {
+        font-size: 20px;
+    }
+
+    .bodycategory h2 {
+        font-size: 17px;
+    }
+
+    .bodycategory h3 {
+        font-size: 16px;
+    }
+
+    .bodycategory p {
+        font-size: 12px;
+    }
+
+
+    
+
+    .categoriaseccionmujer img {
+        height: 150px;
+        width: 150px;
+
+    }
+
+    .avermas {
+        font-size: 12px;
+        margin-bottom: 7px;
+    }
+
+    .aagregarcarrito {
+        font-size: 12px;
+        margin-bottom: 7px;
+    }
+    .formulariologin {
+        font-size: 15px;
+        text-align: center;
+        width: 170px;
+        justify-content: center;
+        color: black;
+        margin-left: 25%;
+        margin-top: 7%;
+        margin-bottom: 10%;
+        margin-right: 20%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    
+    }
+    
+    button {
+        font-size: 13px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    
+    }
+    
+    .notengocuenta {
+        font-size: 13px;
+    }
+    
+    .olvidemicontra {
+        font-size: 13px;
+    }
+
+    .productopag h1 {
+        font-size: 15px;
+    }
+    
+    
+    
+    .detalleproducto p {
+        font-size: 12px;
+    }
+    
+    
+    .detalleproducto img {
+        width: 250px;
+        height: 320px;
+
+    
+    }
+    
+    .aagregarcarrito {
+        color: beige;
+        display: inline-block;
+        padding: 5px 60px;
+        margin: auto;
+        background-color: black;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    
+
+.formulariorecover {
+    font-size: 15px;
+    text-align: center;
+    width: 170px;
+    justify-content: center;
+    color: black;
+    margin-left: 25%;
+    margin-top: 7%;
+    margin-bottom: 10%;
+    margin-right: 20%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+button {
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.recover {
+    font-size: 13px;
+}
+
+.formularioregistro {
+    font-size: 15px;
+    text-align: center;
+    width: 170px;
+    justify-content: center;
+    color: black;
+    margin-left: 25%;
+    margin-top: 7%;
+    margin-bottom: 10%;
+    margin-right: 20%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+
+.yatengocuenta {
+    font-size: 13px;
+}
+
+.condiciones {
+    font-size: 13px;
+}
+    
+    
+
+
+}
+
