@@ -1,37 +1,39 @@
 
-fetch('https://fakestoreapi.com/products/categories')
-.then(function (response) {
-    return response.json();
-})
-.then(function (data) {
-    console.log("data", data)
-    let arrayCategorias = data;
-    let headerHome = document.querySelector('.sectionheader')
-    let header = [];
 
-    headerHome.innerHTML =
-        `<li><a href="./index.html?">Home</a></li>
-<li><a href="./category.html?categories=${arrayCategorias.category = "jewelery"}">Accesorios</a></li>
-<li><a href="./category.html?categories=${arrayCategorias.category = "electronics"}">Electronica</a></li>
-<li><a href="./category.html?categories=${arrayCategorias.category = "men's clothing"}">Hombre</a></li>
-<li><a href="./category.html?categories=${arrayCategorias.category = "women's clothing"}">Mujer</a></li>
-<li><a href="./cart.html?">Carrito</a></li>
-<li><a href="./login.html?">Login</a></li>
-<li><a href="./register.html?">Registro</a></li>`
+document.addEventListener('DOMContentLoaded', function() {
+    let cartContainer = document.querySelector('.cart-container');
+    let finalizarCompra = document.querySelector(`.bottoncomprar`);
 
+    let arrayCart = JSON.parse(localStorage.getItem('arrayCarrito')) || [];
 
-})
-.catch(function (e) {
-    console.log(e)
-})
+    if (arrayCart.length === 0) {
+        cartContainer.innerHTML = '<p>Su carrito está vacío</p>';
+    } else {
+        arrayCart.forEach(productId => {
+            fetch(`https://fakestoreapi.com/products/${productId}`)
+                .then(res => res.json())
+                .then(data => {
+                    cartContainer.innerHTML += `
+                        <div class="product">
+                            <h2>${data.title}</h2>
+                            <img src="${data.image}" alt="${data.title}">
+                            <p>Price: $${data.price}</p>
+                            <p>${data.description}</p>
+                        </div>`;
+                })
+                .catch(function(error){
+                    console.log(error);
+                });
+        });
+        finalizarCompra.style.display=  `block`;
 
+        finalizarCompra.addEventListener(`click`,function(){
+            localStorage.removeItem(`arrayCarrito`);
 
-    
-    
-    
-    let datosCart = localStorage.getItem ("arrayCarrito")
-    
-    let datosParse = JSON.parse (datosCart)
-    console.log (datosParse)
-    
-    
+            alert(`Gracias por su compra`);
+
+            document.location.href = `./index.html`;
+        });
+
+    }
+});
