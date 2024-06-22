@@ -1,3 +1,5 @@
+////////header
+
 fetch('https://fakestoreapi.com/products/categories')
     .then(response => response.json())
     .then(data => {
@@ -15,6 +17,8 @@ fetch('https://fakestoreapi.com/products/categories')
     })
     .catch(e => console.log(e));
 
+
+////////producto
 let queryString = location.search;
 let productoQueryString = new URLSearchParams(queryString);
 let idProducto = productoQueryString.get("id");

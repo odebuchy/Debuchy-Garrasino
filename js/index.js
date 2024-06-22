@@ -1,3 +1,6 @@
+
+///////////////////header
+
 fetch ('https://fakestoreapi.com/products/categories')
 .then (function(response){
   return response.json ();
@@ -25,7 +28,7 @@ fetch ('https://fakestoreapi.com/products/categories')
 });
 
 
-
+/////////////index
 
 
 

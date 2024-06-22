@@ -1,3 +1,5 @@
+///////////header
+
 fetch('https://fakestoreapi.com/products/categories')
     .then(function (response) {
         return response.json();
@@ -23,6 +25,8 @@ fetch('https://fakestoreapi.com/products/categories')
     .catch(function (e) {
         console.log(e)
     })
+
+///////////category
 
     let queryString = location.search;
 let categoryQueryString = new URLSearchParams(queryString)
