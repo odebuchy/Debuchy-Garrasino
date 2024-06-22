@@ -40,7 +40,7 @@ fetch('https://fakestoreapi.com/products/category/women\'s clothing')
     let RopaMujer = [];
     
     for (let i = 0; i <arrayCategoriaMujer.length ; i++) {
-    RopaMujer+=` <div>
+    RopaMujer+=` <article>
      <h3 class="tituloprod">${arrayCategoriaMujer[i].title}</h3>
     <a href="producto.html">
       <img src="${arrayCategoriaMujer[i].image}">
@@ -48,7 +48,7 @@ fetch('https://fakestoreapi.com/products/category/women\'s clothing')
      <p class="descripcionprod">${arrayCategoriaMujer[i].description}</p>
      <p class="precioprod">$${arrayCategoriaMujer[i].price}</p>
      <a  href="./producto.html?id=${arrayCategoriaMujer[i].id}">VER MAS</a>
-     </div>`
+     </article>`
       
     
     sectionRopaMujer.innerHTML= RopaMujer
@@ -111,7 +111,7 @@ fetch('https://fakestoreapi.com/products/category/men\'s clothing')
     let RopaHombre = [];
     
     for (let i = 0; i <arrayCategoriaHombre.length ; i++) {
-    RopaHombre+=` <div>
+    RopaHombre+=` <article>
      <h3 class="tituloprod">${arrayCategoriaHombre[i].title}</h3>
     <a href="producto.html">
       <img src="${arrayCategoriaHombre[i].image}">
@@ -119,7 +119,7 @@ fetch('https://fakestoreapi.com/products/category/men\'s clothing')
      <p class="descripcionprod">${arrayCategoriaHombre[i].description}</p>
      <p class="precioprod">$${arrayCategoriaHombre[i].price}</p>
      <a  href="./producto.html?id=${arrayCategoriaHombre[i].id}">VER MAS</a>
-     </div>`
+     </article>`
     
     sectionRopaHombre.innerHTML= RopaHombre
 
@@ -182,13 +182,13 @@ fetch('https://fakestoreapi.com/products/category/jewelery')
     let Accesorios = [];
     
     for (let i = 0; i <arrayCategoriaAccesorios.length ; i++) {
-    Accesorios+=` <div>
+    Accesorios+=` <article>
      <h3 class="tituloprod">${arrayCategoriaAccesorios[i].title}</h3>
       <img src="${arrayCategoriaAccesorios[i].image}">
      <p class="descripcionprod">${arrayCategoriaAccesorios[i].description}</p>
      <p class="precioprod">$${arrayCategoriaAccesorios[i].price}</p>
      <a  href="./producto.html?id=${arrayCategoriaAccesorios[i].id}">VER MAS</a>
-     </div>`
+     </article>`
       
     
     sectionAccesorios.innerHTML= Accesorios
