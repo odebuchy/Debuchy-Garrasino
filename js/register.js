@@ -5,7 +5,7 @@ let repepass = document.querySelector('#repepass');
 let errorMail = document.querySelector('.errorMail');
 let errorPass = document.querySelector('.errorPass');
 let errorRepepass = document.querySelector('.errorRepepass')
-localStorage.setItem("#email", email)
+ localStorage.setItem("#email", email)
 
 
 form.addEventListener('submit', function(e){
@@ -18,11 +18,11 @@ form.addEventListener('submit', function(e){
 
    if(pass.value == ''){
     errorPass.innerText = 'Por favor complete el campo contraseña.';
-    errorPasserrorMail.style.display = 'block';
+    errorPass.style.display = 'block';
     valid = false; 
    } else if(pass.value.length < 6){
     errorPass.innerText = 'Debe ingresar al menos 6 caracteres.';
-    errorPasserrorMail.style.display = 'block'
+    errorPass.style.display = 'block'
     valid = false; 
    }
 
