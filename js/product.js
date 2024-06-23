@@ -5,15 +5,17 @@ fetch('https://fakestoreapi.com/products/categories')
     .then(data => {
         let headerHome = document.querySelector('.sectionheader');
 
-        headerHome.innerHTML = `
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./category.html?categories=jewelery">Accesorios</a></li>
-            <li><a href="./category.html?categories=electronics">Electrónica</a></li>
-            <li><a href="./category.html?categories=men's clothing">Hombre</a></li>
-            <li><a href="./category.html?categories=women's clothing">Mujer</a></li>
-            <li><a href="./cart.html">Carrito</a></li>
-            <li><a href="./login.html">Login</a></li>
-            <li><a href="./register.html">Registro</a></li>`;
+        headerHome.innerHTML = 
+           `<div class= listaHeader>
+<li><a href="./index.html?">Home</a></li>
+<li><a href="./category.html?categories=${arrayCategorias.category="jewelery"}">Accesorios</a></li>
+<li><a href="./category.html?categories=${arrayCategorias.category="electronics"}">Electronica</a></li>
+<li><a href="./category.html?categories=${arrayCategorias.category="men's clothing"}">Hombre</a></li>
+<li><a href="./category.html?categories=${arrayCategorias.category="women's clothing"}">Mujer</a></li>
+<li><a href="./cart.html?">Carrito</a></li>
+<li><a href="./login.html?">Login</a></li>
+<li><a href="./register.html?">Registro</a></li>
+</div> `;
     })
     .catch(e => console.log(e));
 
