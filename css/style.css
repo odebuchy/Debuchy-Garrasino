@@ -107,6 +107,7 @@ h2 {
 .ropamujerhome article {
     width: 30%;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 .ropahombrehome {
@@ -128,6 +129,7 @@ h2 {
 .ropahombrehome article {
     width: 20%;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 .tituloropamujer {
@@ -152,6 +154,7 @@ h2 {
 .accesorioshome article {
     width: 20%;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 .avermas {
@@ -502,6 +505,16 @@ button {
         font-size: 10px;
         color: aliceblue;
     }
+  
+    .listaHeader {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-bottom: 15px;
+        font-size: 11px;
+    
+    }
 
     h1,
     h2,
@@ -534,13 +547,45 @@ button {
         justify-content: center;
     }
 
+.ropamujerhome img {
+    width: 120px;
+    height: 120px;
+}
+
+.ropamujerhome article {
+    width: 40%;
+    align-items: center;
+    padding: 10px;
+}
     .ropahombrehome {
         justify-content: center;
+    }
+    .ropahombrehome img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .ropahombrehome article {
+        width: 40%;
+        align-items: center;
+        padding: 10px;
     }
 
     .accesorioshome {
         justify-content: center;
     }
+    .accesorioshome img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .accesorioshome article {
+        width: 40%;
+        align-items: center;
+        padding: 10px;
+    }
+
+    
 
     .footerhome {
         height: 120px;
