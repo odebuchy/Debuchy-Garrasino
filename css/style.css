@@ -30,7 +30,7 @@
     justify-content: space-evenly;
     align-items: center;
     padding-bottom: 15px;
-    
+
 }
 
 .sectionheader li {
@@ -103,10 +103,11 @@ h2 {
     align-self: center;
 
 }
+
 .ropamujerhome article {
     width: 30%;
     align-items: center;
-    }
+}
 
 .ropahombrehome {
     display: flex;
@@ -123,10 +124,11 @@ h2 {
     align-self: center;
 
 }
+
 .ropahombrehome article {
     width: 20%;
     align-items: center;
-    }
+}
 
 .tituloropamujer {
     align-self: center;
@@ -146,10 +148,11 @@ h2 {
     align-self: center;
 
 }
+
 .accesorioshome article {
     width: 20%;
     align-items: center;
-    }
+}
 
 .avermas {
     color: rgb(56, 41, 2);
@@ -365,9 +368,10 @@ li {
     height: 40%;
 
 }
+
 .detalleproducto div {
     width: auto;
-     text-align: center;
+    text-align: center;
     margin: 10px;
     padding-top: 10px;
     padding-left: 10px;
@@ -377,7 +381,7 @@ li {
     display: flex;
     flex-wrap: wrap;
     align-self: center;
-    justify-content: space-around;  
+    justify-content: space-around;
 }
 
 
@@ -493,6 +497,7 @@ button {
         font-size: 20px;
         flex-wrap: wrap;
     }
+
     .sectionheader h2 {
         font-size: 10px;
         color: aliceblue;
@@ -553,6 +558,7 @@ button {
     .cart-container h2 {
         font-size: 15px;
     }
+
     .cart-container p {
         font-size: 13px;
     }
@@ -584,7 +590,7 @@ button {
     }
 
 
-    
+
 
     .categoriaseccionmujer img {
         height: 150px;
@@ -601,6 +607,7 @@ button {
         font-size: 12px;
         margin-bottom: 7px;
     }
+
     .formulariologin {
         font-size: 15px;
         text-align: center;
@@ -613,20 +620,20 @@ button {
         margin-right: 20%;
         padding-top: 30px;
         padding-bottom: 30px;
-    
+
     }
-    
+
     button {
         font-size: 13px;
         margin-top: 5px;
         margin-bottom: 5px;
-    
+
     }
-    
+
     .notengocuenta {
         font-size: 13px;
     }
-    
+
     .olvidemicontra {
         font-size: 13px;
     }
@@ -634,21 +641,21 @@ button {
     .productopag h1 {
         font-size: 15px;
     }
-    
-    
-    
+
+
+
     .detalleproducto p {
         font-size: 12px;
     }
-    
-    
+
+
     .detalleproducto img {
         width: 250px;
         height: 320px;
 
-    
+
     }
-    
+
     .aagregarcarrito {
         color: beige;
         display: inline-block;
@@ -658,61 +665,60 @@ button {
         font-size: 20px;
         margin-bottom: 10px;
     }
-    
-    
 
-.formulariorecover {
-    font-size: 15px;
-    text-align: center;
-    width: 170px;
-    justify-content: center;
-    color: black;
-    margin-left: 25%;
-    margin-top: 7%;
-    margin-bottom: 10%;
-    margin-right: 20%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+
+
+    .formulariorecover {
+        font-size: 15px;
+        text-align: center;
+        width: 170px;
+        justify-content: center;
+        color: black;
+        margin-left: 25%;
+        margin-top: 7%;
+        margin-bottom: 10%;
+        margin-right: 20%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+    }
+
+    button {
+        font-size: 13px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+    }
+
+    .recover {
+        font-size: 13px;
+    }
+
+    .formularioregistro {
+        font-size: 15px;
+        text-align: center;
+        width: 170px;
+        justify-content: center;
+        color: black;
+        margin-left: 25%;
+        margin-top: 7%;
+        margin-bottom: 10%;
+        margin-right: 20%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+    }
+
+
+    .yatengocuenta {
+        font-size: 13px;
+    }
+
+    .condiciones {
+        font-size: 13px;
+    }
+
+
+
 
 }
-
-button {
-    font-size: 13px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-
-}
-
-.recover {
-    font-size: 13px;
-}
-
-.formularioregistro {
-    font-size: 15px;
-    text-align: center;
-    width: 170px;
-    justify-content: center;
-    color: black;
-    margin-left: 25%;
-    margin-top: 7%;
-    margin-bottom: 10%;
-    margin-right: 20%;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-}
-
-
-.yatengocuenta {
-    font-size: 13px;
-}
-
-.condiciones {
-    font-size: 13px;
-}
-    
-    
-
-
-}
-

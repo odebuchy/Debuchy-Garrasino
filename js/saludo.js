@@ -55,7 +55,7 @@ if (datosParseUser) {
       let header = [];
 
       headerHome.innerHTML =
-      `<div class= listaHeader>
+        `<div class= listaHeader>
       <li><a href="./index.html?">Home</a></li>
   <li><a href="./category.html?categories=${arrayCategorias.category = "jewelery"}">Accesorios</a></li>
   <li><a href="./category.html?categories=${arrayCategorias.category = "electronics"}">Electronica</a></li>

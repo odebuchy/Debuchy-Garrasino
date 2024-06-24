@@ -5,13 +5,13 @@ fetch('https://fakestoreapi.com/products/categories')
     .then(data => {
         let headerHome = document.querySelector('.sectionheader');
 
-        headerHome.innerHTML = 
-           `<div class= listaHeader>
+        headerHome.innerHTML =
+            `<div class= listaHeader>
 <li><a href="./index.html?">Home</a></li>
-<li><a href="./category.html?categories=${arrayCategorias.category="jewelery"}">Accesorios</a></li>
-<li><a href="./category.html?categories=${arrayCategorias.category="electronics"}">Electronica</a></li>
-<li><a href="./category.html?categories=${arrayCategorias.category="men's clothing"}">Hombre</a></li>
-<li><a href="./category.html?categories=${arrayCategorias.category="women's clothing"}">Mujer</a></li>
+<li><a href="./category.html?categories=${arrayCategorias.category = "jewelery"}">Accesorios</a></li>
+<li><a href="./category.html?categories=${arrayCategorias.category = "electronics"}">Electronica</a></li>
+<li><a href="./category.html?categories=${arrayCategorias.category = "men's clothing"}">Hombre</a></li>
+<li><a href="./category.html?categories=${arrayCategorias.category = "women's clothing"}">Mujer</a></li>
 <li><a href="./cart.html?">Carrito</a></li>
 <li><a href="./login.html?">Login</a></li>
 <li><a href="./register.html?">Registro</a></li>
@@ -44,7 +44,7 @@ fetch(`https://fakestoreapi.com/products/${idProducto}`)
         categoriaProd.innerHTML = data.category;
         categoriaProd.href = `./category.html?categories=${data.category}`;
 
-        carritoAgregar.addEventListener("click", function() {
+        carritoAgregar.addEventListener("click", function () {
             let arrayCart = JSON.parse(localStorage.getItem("arrayCarrito")) || [];
             arrayCart.push(data.id);
             localStorage.setItem("arrayCarrito", JSON.stringify(arrayCart));

@@ -1,6 +1,6 @@
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     let cartContainer = document.querySelector('.cart-container');
     let finalizarCompra = document.querySelector(`.bottoncomprar`);
 
@@ -21,13 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
                             <p>${data.description}</p>
                         </div>`;
                 })
-                .catch(function(error){
+                .catch(function (error) {
                     console.log(error);
                 });
         });
-        finalizarCompra.style.display=  `block`;
+        finalizarCompra.style.display = `block`;
 
-        finalizarCompra.addEventListener(`click`,function(){
+        finalizarCompra.addEventListener(`click`, function () {
             localStorage.removeItem(`arrayCarrito`);
 
             alert(`Gracias por su compra`);
